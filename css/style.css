@@ -1,0 +1,156 @@
+/* GENERAL RULES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* NAV ORIZZONTALE CON BOTTONE */
+.topnav {
+  position: fixed;
+  top: 0;
+  width:100%;
+  height: 100px;
+  background-color: #1ED760; /* verde spotify */
+  z-index: 500;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main {
+  margin-top: 100px;
+}
+
+body {
+  font-family:  sans-serif;
+  color: rgb(128, 128, 128);
+}
+
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.container {
+  display: flex;
+}
+
+/* SIDE VERTICAL NAV  */
+.left-nav {
+  background-color: black;
+  height: 100vh;
+  width: 300px;
+  padding: 30px;
+  position: relative;
+}
+
+
+/* LOGO */
+.logo img {
+  width: 180px;
+  height: auto;
+}
+
+/* ICONS */
+/* .icons-left-nav {
+
+} */
+
+
+.icons-left-nav li ,
+.overflow li {
+  margin: 20px 0;
+}
+
+.icons-left-nav
+li:first-child {
+  border-left: 3px solid #C8FF00;
+  margin-left: -30px;
+  padding-left: 27px;
+}
+
+.icons-left-nav {
+  width: 35px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* PLAYLIST */
+.playlist h4 {
+  color: white;
+  margin: 25px 0 15px 0;
+}
+
+#crea-playlist {
+  font-size: 18px;
+}
+
+#plus {
+  font-size: 18px;
+  background-color: rgb(128, 128, 128); /*GREY*/
+  color: black;
+  padding: 12px 13px;
+  margin: 0 10px 5px 0;
+}
+
+#plus:hover {
+  background-color: #FFFFFF;
+}
+
+/* USER SECTION */
+.username {
+  position: absolute;
+  bottom: 0;
+  background-color: #000000;
+  width: 70%;
+}
+
+#user-img {
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+#download {
+  font-size: 8px;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 3px;
+  vertical-align: bottom;
+  border: 1px solid rgb(128, 128, 128);
+}
+
+.donwload-app {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+.name-section {
+  padding-bottom: 10px;
+}
+
+
+/* VIEWPORT RIGHT OVERFLOW */
+.right-menu {
+  height: 100vh;
+  width: calc(100% - 300px);
+  background-color: #141922;
+}
+
+.topnav{
+  text-align: right;
+  color: #000000;
+}

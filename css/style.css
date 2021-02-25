@@ -333,7 +333,29 @@ main {
   color: white;
 }
 
+/* animazione barretta categorie */
+.filter_nav_menu ul li a.active:hover::after {
+  animation: none;
+}
 
+.filter_nav_menu ul li a:hover::after {
+  animation: lowerBarMove 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lowerBarMove {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 50px;
+  }
+
+  100% {
+    width: 40px;
+  }
+}
 
 /* RECENTLY PLAYED */
 .playlist {

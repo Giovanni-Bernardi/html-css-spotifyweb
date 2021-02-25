@@ -7,74 +7,320 @@
 ╚══════╝╚═╝      ╚═════╝    ╚═╝   ╚═╝╚═╝        ╚═╝        ╚══╝╚══╝ ╚══════╝╚═════╝
  -->
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+     <!-- TITLE -->
+     <title>Spotify Web</title>
 
-    <!-- LINK CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
+     <!-- LINK CSS -->
+     <link rel="stylesheet" href="css/framework.css">
+     <link rel="stylesheet" href="css/style.css">
 
-    <!-- TITLE -->
-    <title>Spotify Web</title>
-    </head>
+     <!-- FONT AWESOME -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-    <body>
+     <!-- GOOGLE FONT -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ </head>
 
-      <div class="container">
-        <div class="left-nav">
+ <body>
+      <div class="scroll_containter">
+        <main>
+
+        <!-- TOP BAR -->
+        <section class="top_bar">
+          <a class="btn btn-lg" href="#">Effettua l'Upgrade</a>
+        </section>
+
+          <!-- LEFT NAV Mobile -->
+          <div class="left_nav_xs">
+
+            <!-- Logo  -->
+            <div class="upper_nav_icons">
+              <a href="index.html"><img class="logo_xs_icon" src="img/logo-small.svg" alt="Logo Spotify"></a>
+              <!-- leftnav icons HOME - SEARCH- LIBRARY -->
+              <a href="#"><img class="xs_icon" src="img/home.svg" alt="Home"></a>
+              <a href="#"><img class="xs_icon" src="img/search.svg" alt="Search"></a>
+              <a href="#"><img class="xs_icon" src="img/libreria.svg" alt="Library"></a>
+              </div>
+
+              <!-- DOWNLOAD APP & USER PROFILE-->
+              <div class="lower_nav_icons">
+                <a href="#"><i class="fas fa-arrow-down"></i></a>
+                <a href="https://github.com/Giovanni-Bernardi"><img class="user-img" src="https://avatars.githubusercontent.com/u/71338970?s=460&u=381963c2086c7eb402c869f1ef631150514a663d&v=4" alt="user-image"></a>
+              </div>
+            </div>
+
+        <!-- LEFT NAV Desktop-->
+        <section class="left_nav">
+
+            <!-- Logo SPOTIFY -->
             <div class="logo">
-              <img src="img/logo.svg" alt="">
+                <a href="#"><img class="logo_xl" src="img/logo.svg" alt="Spotify logo" title=" Logo Spotify"></a>
             </div>
 
-            <!-- left column black -->
-            <ul class="icons-left-nav">
-              <li><a href="#"><img class="icons-left-nav" src="img/home.svg" alt="">Home</a></li>
-              <li><a href="#"><img class="icons-left-nav" src="img/search.svg" alt="">Cerca</a></li>
-              <li><a href="#"><img class="icons-left-nav" src="img/libreria.svg" alt="">La Tua Libreria</a></li>
+              <!-- LEFT NAV CONTROLS -->
+              <div class="control_section">
+                <div class="control_row active">
+                    <img src="img/home.svg" alt="Home">
+                    <a href="#"><p>Home</p></a>
+                </div>
+                  <div class="control_row search">
+                    <img src="img/search.svg" alt="Search">
+                    <a href="#"><p>Cerca</p></a>
+                  </div>
+                  <div class="control_row library">
+                    <img src="img/libreria.svg" alt="Library">
+                    <a href="#"><p>La tua libreria</p></a>
+                  </div>
+              </div>
+
+              <!-- PLAYLIST -->
+              <div class="playlist_create">
+                <h5>Playlist</h5>
+                <div class="control_row create">
+                  <a href="#"><i class="fas fa-plus"></i></a>
+                  <a href="#"><p>Crea Playlist</p></a>
+                </div>
+              </div>
+
+                <div class="playlist_list">
+                  <a href="#"><p>Nome Playlist</p></a>
+                  <a href="#"><p>Nome Playlist</p></a>
+                  <a href="#"><p>Nome Playlist</p></a>
+                  <a href="#"><p>Nome Playlist</p></a>
+                  <a href="#"><p>Nome Playlist</p></a>
+                  <a href="#"><p>Nome Playlist</p></a>
+                  <a href="#"><p>Nome Playlist</p></a>
+                </div>
+
+                <!-- USER -->
+                <div class="user_section">
+                  <div class="control_row app_install">
+                    <a href="#"><i class="fas fa-arrow-down"></i></a>
+                    <a href="#"><p>Installa app</p></a>
+                  </div>
+                  <hr>
+                  <div class="user_name">
+                    <a href="https://github.com/Giovanni-Bernardi"><img class="user-img" src="https://avatars.githubusercontent.com/u/71338970?s=460&u=381963c2086c7eb402c869f1ef631150514a663d&v=4" alt="user-image"></a>
+                    <a href="https://github.com/Giovanni-Bernardi"><p>Giovanni</p></a>
+                  </div>
+              </div>
+          </section>
+
+<!-- MAIN CONTENT -->
+        <section class="main_content">
+
+          <!-- CATEGORIES  -->
+          <div class="filter_nav_menu text_center text_uppercase">
+            <ul>
+              <li><a class="active" href="#">In Evidenza</a></li>
+              <li><a href="#">Podcast</a></li>
+              <li><a href="#">Classifiche</a></li>
+              <li><a href="#">Generi e Mood</a></li>
+              <li><a href="#">Nuove Uscite</a></li>
+              <li><a href="#">Scopri</a></li>
             </ul>
+          </div>
 
-            <!-- playlist -->
-            <div class="playlist">
-              <h4>PLAYLIST</h4>
-              <a id="crea-playlist" href="#"><i id="plus" class="fas fa-plus"></i>Crea Playlist</a>
-              <ul class="overflow">
-                <li><a href="#">Playlist 1</a></li>
-                <li><a href="#">Playlist 2</a></li>
-                <li><a href="#">Playlist 3</a></li>
-                <li><a href="#">Playlist 4</a></li>
-                <li><a href="#">Playlist 5</a></li>
-                <li><a href="#">Playlist 6</a></li>
-                <li><a href="#">Playlist 7</a></li>
-              </ul>
-            </div>
+          <!-- recentply plyed -->
+          <div class="playlist recently_played">
+            <h1>Recently Played</h1>
+            <div class="playlist_container">
 
-            <!-- playlist -->
-            <div class="username">
-              <div class="donwload-app">
-                <a href="#"><i id="download" class="fas fa-arrow-down"></i>Installa app</a>
+              <!-- IMG SQUARE -->
+              <!-- metal -->
+              <div class="playlist_box text_center">
+                <div class="img_box">
+                    <i class="fas fa-play"></i>
+                    <img src="img/metal_lifting.jpg" alt="Metal Lifting">
+                  </div>
+                  <a href="#"><h2>Heavy Metal</h2></a>
+                  <a href="#"><p>subtitle</p></a>
+                </div>
+
+              <!-- stranger things -->
+              <div class="playlist_box text_center">
+                <div class="img_box">
+                  <i class="fas fa-play"></i>
+                  <img src="img/stranger.jpeg" alt="Stranger Things">
+                </div>
+                <a href="#"><h2>Stranger Things Vol.1 (a Netflix Original series Soundtrack)</h2></a>
+                <a href="#"><p>Kyle Dixon & Michael Stein</p></a>
               </div>
-              <div>
-                <a href="#"><img id="user-img" src="img/user.jpg" alt="">Username</a>
+
+              <!-- acquietplace -->
+              <div class="playlist_box text_center">
+                <div class="img_box">
+                  <i class="fas fa-play"></i>
+                  <img src="img/aquietplace.jpeg" alt="aquietplace">
+                </div>
+                <a href="#"><h2>A quite place</h2></a>
+                <a href="#"><p>subtitle</p></a>
+              </div>
+
+              <!-- split -->
+              <div class="playlist_box text_center">
+                <div class="img_box">
+                  <i class="fas fa-play"></i>
+                  <img src="img/split.jpeg" alt="split">
+                </div>
+                <a href="#"><h2>A quite place</h2></a>
+                <a href="#"><p>subtitle</p></a>
+              </div>
+
+              <!-- cure of wellness -->
+              <div class="playlist_box text_center">
+                <div class="img_box">
+                  <i class="fas fa-play"></i>
+                  <img src="img/cure.jpeg" alt="Cure of wellness">
+                </div>
+                <a href="#"><h2>A cure of wellness</h2></a>
+                <a href="#"><p>subtitle</p></a>
+              </div>
+
+              <!-- sinister -->
+              <div class="playlist_box text_center">
+                <div class="img_box">
+                  <i class="fas fa-play"></i>
+                  <img src="img/sinister.jpeg" alt="Sinister">
+                </div>
+                <a href="#"><h2>Sinister</h2></a>
+                <a href="#"><p>subtitle</p></a>
               </div>
             </div>
           </div>
 
+          <!-- CREATED FOR USER -->
+          <div class="playlist created_for">
+            <h1>Creato per Giovanni</h1>
+            <p>Più ascolti, più accurati saranno i suggerimenti</p>
+            <div class="playlist_container">
 
-          <!-- right section -->
-          <div class="right-menu">
-            <div class="topnav">
-              button
+              <div class="playlist_box text_center">
+                <div class="img_box">
+                  <i class="fas fa-play"></i>
+                  <img src="img/radar.jpeg" alt="Release Radar">
+                </div>
+                <a href="#"><h2>Release Radar</h2></a>
+              </div>
+
+              <div class="playlist_box text_center">
+                <div class="img_box">
+                  <i class="fas fa-play"></i>
+                  <img src="img/mixdaily.jpeg" alt="Daily Mix">
+                </div>
+                <a href="#"><h2>Daily Mix 1</h2></a>
+              </div>
             </div>
-            <main>
-              asdasdasdasdasdsadsaasdasd
-            </main>
           </div>
 
-        </div>
-      </body>
-</html>
+          <!-- Sezione Artisti Popolari -->
+          <div class="playlist popular_artist">
+            <h1>Artisti più Popolari</h1>
+            <p>Più ascolti, più accurati saranno i suggerimenti</p>
+            <div class="playlist_container">
+
+              <div class="playlist_box text_center">
+                <div class="img_box">
+                  <i class="fas fa-play"></i>
+                  <img class="circle_img" src="img/youg.jpeg" alt="Youg">
+                </div>
+                <a href="#"><h2>Lana Del Rey</h2></a>
+              </div>
+
+              <div class="playlist_box text_center">
+                <div class="img_box">
+                  <i class="fas fa-play"></i>
+                  <img class="circle_img" src="img/einaudi.jpeg" alt="Ludovico Einaudi">
+                </div>
+                <a href="#"><h2>Ludovico Einaudi</h2></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+<!-- FOOTER -->
+      <footer>
+
+          <!-- PLAYER CONTROLS trackinfo MOBILE -->
+          <div class="track_name_xs">
+            <div class="track_info flex_row align_center">
+              <h6>Sinister &bull;</h6>
+              <p>Brano Nome</p>
+            </div>
+            <div class="track_icons">
+              <a href="#"><i class="far fa-heart"></i></a>
+              <a href="#"><i class="far fa-folder"></i></a>
+            </div>
+          </div>
+
+          <!-- PLAYER CONTROLS trackinfo DESKTOP -->
+          <div class="track_name">
+            <div class="track_img">
+              <a href="#"><img src="img/sinister.jpeg" alt=""></a>
+            </div>
+            <div class="track_info">
+              <h6>Sinister</h6>
+              <a href="#"><p>Brano Nome</p></a>
+            </div>
+            <div class="track_icons">
+              <a href="#"><i class="far fa-heart"></i></a>
+              <a href="#"><i class="far fa-folder"></i></a>
+            </div>
+          </div>
+
+          <!-- PLAYER CONTROLS progressbar (center) -->
+          <div class="main_control text_center">
+            <div class="track_controls">
+              <a href="#"><i class="fas fa-random"></i></a>
+              <a href="#"><i class="fas fa-step-backward"></i></a>
+              <a href="#"><i class="fas fa-play"></i></a>
+              <a href="#"><i class="fas fa-step-forward"></i></a>
+              <a href="#"><i class="fas fa-redo-alt"></i></a>
+            </div>
+            <div class="container_track_bar">
+              <p>00:25</p>
+              <div class="track_bar">
+                <div class="white_bar"></div>
+                <div class="gray_bar"></div>
+              </div>
+              <p>04:35</p>
+            </div>
+          </div>
+
+          <!-- PLAYER CONTROLS rightside(Mobile) -->
+          <div class="display_control_xs">
+            <div class="display_icons">
+              <a href="#"><i class="fas fa-list-ul"></i></a>
+              <a href="#"><i class="fas fa-desktop"></i></a>
+              <a href="#"><i class="fas fa-volume-down"></i></a>
+            </div>
+            <div class="track_bar">
+              <div class="white_bar"></div>
+              <div class="gray_bar"></div>
+            </div>
+          </div>
+
+          <!-- PLAYER CONTROLS rightside(Desktop) -->
+          <div class="display_control">
+            <div class="display_icons">
+              <a href="#"><i class="fas fa-list-ul"></i></a>
+              <a href="#"><i class="fas fa-desktop"></i></a>
+              <a href="#"><i class="fas fa-volume-up"></i></a>
+            </div>
+            <div class="track_bar">
+              <div class="white_bar"></div>
+              <div class="gray_bar"></div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </body>
+ </html>

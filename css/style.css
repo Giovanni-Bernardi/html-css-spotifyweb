@@ -120,9 +120,9 @@ main {
 
 /* EFFETTUA L'UPGRADE TRANSITION */
 .top_bar a:hover {
-  transform: scale(1.1);
-  font-size: 0.8em;;
-  padding: 18px 25px;
+  transform: scale(1.2);
+  font-size: 0.7em;;
+  /* padding: 18px 25px; */
 }
 
 /* TOP RIGHT NAV */

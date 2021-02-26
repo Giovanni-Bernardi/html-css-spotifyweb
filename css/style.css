@@ -12,7 +12,6 @@ body {
   overflow: hidden;
 }
 
-
 ul {
   list-style-type: none;
 }
@@ -33,6 +32,7 @@ a {
 
 .text_right {
   text-align: right;
+
 }
 .text_center {
   text-align: center;
@@ -42,7 +42,6 @@ a {
 .circle_img {
   border-radius: 100%;
 }
-
 
 /* flex */
 .flex_row {
@@ -58,6 +57,7 @@ a {
 .align_center {
   align-items: center;
 }
+
 
 /* MAIN */
 .scroll_containter {
@@ -93,6 +93,7 @@ main {
   overflow: hidden;
 }
 
+/* SECTION 1 */
 /* TOP BAR */
 .top_bar {
   position: fixed;
@@ -125,7 +126,8 @@ main {
   /* padding: 18px 25px; */
 }
 
-/* TOP RIGHT NAV */
+/* SECTION 2 */
+/* LEFT NAV */
 .left_nav {
   width: 250px;
   height: 100vh;
@@ -153,7 +155,6 @@ main {
   width: 70%;
 }
 
-/* LEFT NAV (VERTICAL) */
 .left_nav .control_row {
   display: flex;
   align-items: center;
@@ -284,6 +285,7 @@ main {
   font-weight: 800;
 }
 
+/* SECTION 2 */
 /* MAIN */
 .main_content {
   width: calc(100% - 250px);
@@ -368,6 +370,7 @@ main {
   margin-bottom: 30px;
 }
 
+/* flex rules container playlist */
 .playlist_container {
   display: flex;
   justify-content: flex-start;
@@ -393,7 +396,7 @@ main {
   transform: translate(-50%, -50%);
   display: none;
 
-  /* design */
+  /* design PLAYBUTTON */
   padding: 6px 6px 6px 9px;
   color: white;
   font-size: 30px;
@@ -413,9 +416,6 @@ main {
   width: 100%;
 }
 
-
-
-
 /* CREATED FOR [USERNAME] */
 .created_for h1 {
   margin-bottom: 5px;
@@ -434,6 +434,7 @@ main {
   margin-bottom: 30px;
 }
 
+/* SECTION 3 */
 /* PLAYER */
 footer {
   position: fixed;
@@ -460,6 +461,7 @@ footer {
   justify-content: space-around;
 }
 
+/* controlli immagine track-on */
 .track_img img {
   width: 75px;
   margin-right: 10px;
@@ -730,7 +732,7 @@ footer {
     padding: 5px;
   }
 
-  /* SEZIONE PRINCIPALE MAIN */
+  /* comportamento main da 768px */
   main {
     height: calc(100% - 90px);
   }
@@ -804,7 +806,7 @@ footer {
     justify-content: center;
     color: #b001c7d3;
   }
-}
+} /* end media 768px */
 
 /* COMPORTAMENTO DELLA BARRA DEI CONTROLLI */
 /* MEDIA 500px (intermediate breakpoint) */

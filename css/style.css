@@ -32,8 +32,8 @@ a {
 
 .text_right {
   text-align: right;
-
 }
+
 .text_center {
   text-align: center;
 }
@@ -54,6 +54,7 @@ a {
   flex-direction: column;
 }
 
+/* ALLIGNMENT */
 .align_center {
   align-items: center;
 }
